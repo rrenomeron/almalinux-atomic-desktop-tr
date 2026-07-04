@@ -44,3 +44,7 @@ docker:
      registry.redhat.io:
          sigstore: https://registry.redhat.io/containers/sigstore
 EOF
+
+echo "Adding Intel One Mono Font"
+/tmp/scripts/run_module.sh 'fonts' \
+  '{ "type": "fonts", "fonts" : {"url-fonts": [ { "name": "intel-one-mono", "url": "https://github.com/intel/intel-one-mono/releases/download/V1.4.0/otf.zip" } ] }}'
