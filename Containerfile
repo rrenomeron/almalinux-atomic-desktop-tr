@@ -49,7 +49,7 @@ COPY --from=ghcr.io/projectbluefin/common:latest@sha256:9ee1848f1836d2dc19029fe1
 COPY tr-osforge/reusable_scripting /oci/tr-osforge
 
 # Base Image stage
-FROM quay.io/almalinuxorg/atomic-desktop-gnome:latest@sha256:eb7d8957143ef8b3fd2ff5215b47ef73df965b90319cb1830638509ebc6c70a1
+FROM quay.io/almalinuxorg/atomic-desktop-gnome:latest@sha256:71c342533fed0d7a3f9a12220365d53034be4fcbb859fdaf2e93c057103619ce
 
 
 ARG IMAGE_NAME
