@@ -43,7 +43,11 @@ clean:
     rm -f changelog.md
     rm -f output.env
     rm -f output/
-
+setup-submodule:
+    #!/usr/bin/bash
+    cd tr-osfroge
+    git submodule init
+    git submodule update --remote
 # Sudo Clean Repo
 [group('Utility')]
 [private]
